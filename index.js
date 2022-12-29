@@ -14,7 +14,20 @@ function wave1(e) {
     nextWave.style.left = x + "px";
     setTimeout(() => nextWave.remove(), 3000);
 };
+var t = "Kostya - Bilyavskiy", x = 0, y = 100, w = -35;
 
+var typ = t.split("");
+
+var fer = typ.join("").toUpperCase();
+
+for (i = 0; i < typ.length; i++) {
+
+    var fantom = document.createElement("h2");
+    fantom.className = "text";
+    fantom.innerHTML = fer[i];
+    wrapperText.prepend(fantom);
+    fantom.style.transform = "rotate(" + i * 18 + "deg)";
+}
 
 
 
