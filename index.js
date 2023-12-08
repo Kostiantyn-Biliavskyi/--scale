@@ -14,10 +14,9 @@ function wave1(e) {
     nextWave.style.left = x + "px";
     setTimeout(() => nextWave.remove(), 3000);
 };
-var t = "Kostya - Bilyavskiy", x = 0, y = 100, w = -35;
-
+// ---------------------------------------------------
+var t = "Kostya - Bilyavskiy";
 var typ = t.split("");
-
 var fer = typ.join("").toUpperCase();
 
 for (i = 0; i < typ.length; i++) {
